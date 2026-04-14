@@ -462,6 +462,4 @@ curl -X POST http://localhost:5555/workouts/1/exercises/1/workout_exercises \
 - More comprehensive test suite
 - OpenAPI/Swagger documentation
 
-## License
 
-This project is provided for educational purposes as part of the Moringa School curriculum.
