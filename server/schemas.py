@@ -3,7 +3,6 @@ from datetime import date
 
 
 class ExerciseSchema(Schema):
-    """Schema for Exercise model with serialization and validation."""
     
     id = fields.Int(dump_only=True)
     name = fields.Str(
@@ -21,7 +20,6 @@ class ExerciseSchema(Schema):
     
     @validates('name')
     def validate_name_unique(self, value):
-        """Validate that exercise name is unique (schema level)."""
         from models import Exercise
         existing = Exercise.query.filter_by(name=value).first()
         if existing:
@@ -29,7 +27,7 @@ class ExerciseSchema(Schema):
 
 
 class WorkoutExerciseDetailSchema(Schema):
-    """Schema for WorkoutExercise model with nested exercise details."""
+  
     
     id = fields.Int(dump_only=True)
     exercise_id = fields.Int()
@@ -40,7 +38,7 @@ class WorkoutExerciseDetailSchema(Schema):
 
 
 class WorkoutSchema(Schema):
-    """Schema for Workout model with validation."""
+    
     
     id = fields.Int(dump_only=True)
     date = fields.Date(
@@ -67,7 +65,6 @@ class WorkoutSchema(Schema):
 
 
 class WorkoutExerciseSchema(Schema):
-    """Schema for WorkoutExercise model with validation."""
     
     id = fields.Int(dump_only=True)
     workout_id = fields.Int(required=True)
@@ -93,7 +90,6 @@ class WorkoutExerciseSchema(Schema):
 
 
 class ExerciseDetailSchema(Schema):
-    """Schema for Exercise with associated workouts."""
     
     id = fields.Int(dump_only=True)
     name = fields.Str()

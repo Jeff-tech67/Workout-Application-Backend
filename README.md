@@ -10,7 +10,7 @@ This backend API enables personal trainers to:
 - Track exercises within specific workouts with sets, reps, or duration metrics
 - Ensure data integrity through comprehensive validations at multiple levels
 
-## Technology Stack
+## Technology Used
 
 - **Framework**: Flask 2.2.2
 - **Database**: SQLite with Flask-SQLAlchemy 3.0.3
