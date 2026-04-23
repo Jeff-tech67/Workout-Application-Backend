@@ -22,12 +22,12 @@ This backend API enables personal trainers to:
 
 ```
 server/
-├── app.py              # Flask application and all endpoints
-├── models.py           # SQLAlchemy models (Exercise, Workout, WorkoutExercise)
-├── schemas.py          # Marshmallow schemas for validation and serialization
-├── seed.py             # Database seeding with sample data
-├── migrations/         # Alembic migration files
-└── app.db             # SQLite database (generated at runtime)
+├── app.py             
+├── models.py           
+├── schemas.py        
+├── seed.py        
+├── migrations/    
+└── app.db             
 ```
 
 ## Installation
@@ -36,18 +36,15 @@ server/
 - Python 3.8 or higher
 - Git
 
-### Setup Steps
+### Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd Workout-Application-Backend
-   ```
+1. **Clone this repository**
+  
 
 2. **Create and activate a virtual environment**
    ```bash
    python3 -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   source .venv/bin/activate 
    ```
 
 3. **Install dependencies**
