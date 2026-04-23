@@ -6,7 +6,7 @@ db = SQLAlchemy()
 
 
 class Exercise(db.Model):
-    """Represents a type of exercise (e.g., push-ups, running)."""
+    
 
     __tablename__ = 'exercises'
 
